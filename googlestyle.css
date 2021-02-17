@@ -1,0 +1,45 @@
+body {
+    padding: 3vw;
+    margin: 0;
+    font-family:  "Arial", Helvetica, sans-serif;
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 15vh repeat(3, 1fr);
+}
+
+.nav-bar {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 10vw 10vw 1fr 10vw 10vw;
+    grid-template-rows: 10vh;
+}
+.lnks {
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.lnks:hover {
+    text-decoration: underline;
+}
+
+#about-lnk {
+    grid-column: 1/2;
+}
+
+
+#store-lnk {
+    grid-column: 2/3;
+}
+
+#gmail-lnk {
+    grid-column: 4/5;
+}
+
+#images-lnk {
+    grid-column: 5/6;
+}
+
+
