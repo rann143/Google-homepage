@@ -29,7 +29,6 @@ body {
     grid-column: 1/2;
 }
 
-
 #store-lnk {
     grid-column: 2/3;
 }
@@ -40,6 +39,11 @@ body {
 
 #images-lnk {
     grid-column: 5/6;
+}
+
+.logo {
+    grid-column: 2/3;
+    grid-row: 2/3;
 }
 
 
