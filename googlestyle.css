@@ -1,17 +1,24 @@
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     padding: 10px;
     margin: 0;
+    width: 100vw;
+    height: 100vh;
+    border-style: solid;
+    border-color: black;
     font-family:  "Helvetica", Arial, sans-serif;
     font-size: 10px;
     font-weight: 300;
     display: grid;
     grid-template-columns: 100px 1fr 1fr 100px;
-    grid-template-rows: 100px 1fr 1fr 100px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
+
 
 .nav-bar {
     grid-row: 1/2;
@@ -93,12 +100,15 @@ body {
 }
 
 .logo {
+    position: relative;
     grid-column: 2/4;
     justify-self: center;
+    align-self: center;
     grid-row: 2/3;
 }
 
 #search-form{
+    position: relative;
     grid-row: 3/4;
     grid-column: 2/4;
     justify-self: center;
@@ -140,13 +150,16 @@ input[type=search] {
     width: 100%;
     z-index: 10;
 }
-   
 
-    
 
 #searchbar:hover {
     box-shadow: 0 0 5px 1px rgb(199, 204, 189);
 }
 
+
+footer {
+    grid-column: 1/5;
+    background-color: rgb(173, 114, 114);
+}
 
 
