@@ -3,6 +3,8 @@
 
 <head>
     <link rel="stylesheet" href="googlestyle.css">
+    <script src="https://kit.fontawesome.com/88730e3ef5.js" crossorigin="anonymous">
+    </script>
 </head>
 
 <body>
@@ -11,8 +13,14 @@
         <h2 id="store-lnk"> <a id="store-lnk" class="lnks" href="#">Store </a> </h2>
         <h2 id="gmail-lnk"> <a id="gmail-lnk" class="lnks" href="#">Gmail</a> </h2>
         <h2 id="images-lnk"> <a id="images-lnk" class="lnks" href="#">Images</a> </h2>
-        <div class = "menu"></div>
-        <div class = "account"></div>
+        <div class="nav-icons">
+            <div class = "menu">
+                <i class="fas fa-bars fa-lg menu-icon"></i>
+            </div>
+            <div class = "account">
+                <i class="fas fa-user-circle fa-3x"></i>
+            </div>
+        </div>
     </nav>
 
     <div class="logo">
@@ -20,9 +28,12 @@
     </div>
 
     <form id="search-form" action="#">
-        <input id="searchbar" type="search" placeholder="Search...">
-
+        <div class="input-container">
+            <i class="fas fa-search icon"></i>
+            <input id="searchbar" type="search" placeholder="Search...">
+        </div>
     </form>
+
 </body>
 
 </html>
